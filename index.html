@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Pizza website">
+        <meta name="keywords" content="Menu">
+        <meta name="Developer" content="Aditi Trivedi">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title> Pizza Go</title>
+        <link rel="shortcut icon" href="Pizza_icon.png" type="x-icon" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            h3.inset{border-style: inset;
+                     border-width: 5px; 
+                     border-start-end-radius: 5px;
+                     height: 20px;
+                     width: 200px;
+                    }
+            div{
+                background-color: rgb(220, 182, 248);
+                width: 700px;
+                border: 15px solid rgb(249, 3, 192);
+                padding: 100px;
+                margin: 10px;
+               } 
+            h1{
+                text-shadow: 2px 2px rgb(241, 4, 4);
+                text-align: center;
+                font-size: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                border-style: solid black;
+                border-radius: 50px;
+                height: 45px;
+                width: 200px;
+                width: 2px;
+                }        
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="center">PIZZA GO</h1><br><br>
+            <img src="Pizza.jpg"/><br><br><br>
+        </header>
+        <main>
+            <h2>To deliver the yummy pizza, please answer some of the question below::</h2><br><br><br>
+            <div>
+            <form action="/action_page.php">
+                <h3 class="inset"><label for="quantity"> Number of Pizza:</label></h3>
+                <input type="number" id="quantity" name="quantity"><br><br>
+                <h3 class="inset"><label for="size">Number of slices:</label></h3>
+                <input type="number" id="size" name="size" min="4" max="10"><br><br>
+                <h3 class="inset"><label for="shape"> Select the shape:</label></h3>
+                <select id="shape"><br><br>
+                    <option value="square">Square</option>
+                    <option value="round">Round</option><br>
+                </select><br><br>
+                <h3 class="inset"><label for="toppings"> Select Toppings:</label></h3><br/>
+                <input type="radio" id="toppings" name="pizza toppings" value="Mozzarella">
+                <label for="Mozzarella">Mozzarella</label><br/>
+                <input type="radio" id="toppings" name="pizza toppings" value="Bell peppers">
+                <label for="Bell peppers">Bell peppers</label><br/>
+                <input type="radio" id="toppings" name="pizza toppings" value="Oregano">
+                <label for="Oregano">Oregano</label><br/>
+                <input type="radio" id="toppings" name="pizza toppings" value="Vegan cheese">
+                <label for="Vegan cheese">Vegan cheese</label><br/>
+                <input type="radio" id="toppings" name="pizza toppings" value="Roasted red peppers">
+                <label for="Roasted red peppers">Roasted red peppers</label><br><br><br>
+                <h3 class="inset"><label for="crust"> Types of crust:</label></h3><br/>
+                <input type="radio" id="crust" name="crust" value="Thin and Crispy">
+                <label for="Thin and Crispy">Thin and Crispy</label><br/>
+                <input type="radio" id="crust" name="crust" value="Chicago Deep Dish">
+                <label for="Chicago Deep Dish">Chicago Deep Dish</label><br/>
+                <input type="radio" id="crust" name="crust" value="Stuffed Crust">
+                <label for="Stuffed Crust">Stuffed Crust</label><br/>
+                <input type="radio" id="crust" name="crust" value="New York Style">
+                <label for="New York Style">New York Style</label><br/>
+                <input type="radio" id="crust" name="crust" value="Whole Wheat or Multigrain">
+                <label for="Whole Wheat or Multigrain">Whole Wheat or Multigrain</label><br><br><br>
+                <h2><label for="payment type"> Select the mode of payment</label></h2>
+                <select id="payment type">
+                    <option value="in-person">Payment on delivery</option>
+                    <optgroup label="Online">
+                        <option value="debit or credit">Debit/Credit Card</option>
+                        <option value="UPI">UPI</option>
+                    </optgroup>
+                </select>
+            </div>
+                <h2>Customer details</h2>
+                <fieldset>
+                    <legend>Personal details:</legend>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="number">Phone number:</label>
+                    <input type="number" id="number" name="Phone number"><br><br>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="Address" max="100"><br><br>
+                    <button type="submit" onclick="alert('Thank You for the order, your order is confirmed')">Submit</button>
+                </fieldset>  
+                <h3 class="inset">Review</h3>
+                <p><label for="review">Give feedback to our service</label><br><br></p>
+                <textarea id="review" name="review" rows="5" columns="100" width="90px" height="40%"></textarea><br>
+                    <input type="submit" value="Submit">  
+            </form>
+        </main>
+        <footer>
+            <p1>@ Have fun and visit again</p1>
+        </footer>  
+    </body> 
+</html>           

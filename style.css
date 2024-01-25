@@ -1,0 +1,23 @@
+body{
+    font-family: Georgia;
+    background-color: aliceblue;
+}
+.center{
+    width: 550px;
+    margin: auto;
+}
+img{
+    height: 40%;
+    width: 50%;
+}
+p{
+    text-align:left;
+}
+h1{
+    font-family: Impact, sans-serif;
+    text-align: center;
+}
+review{
+    height: 50%;
+    width: 100%;
+}
